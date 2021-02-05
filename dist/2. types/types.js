@@ -33,7 +33,7 @@ function uppercaseLastLetter(str) {
         return str[0].toUpperCase() + str.substring(1);
     }
 }
-// non primitive types like: [], {}, new Map();
+// non primitive types like: [], {}, new Map(); are object
 const myObj = new Map();
 /* -------------------- */
 /*          Void        */

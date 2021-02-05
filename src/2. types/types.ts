@@ -49,7 +49,7 @@ function uppercaseLastLetter(str: string | null) {
 // js primitive types
 type primitiveTypes = boolean | number | string | symbol | null | undefined;
 
-// non primitive types like: [], {}, new Map();
+// non primitive types like: [], {}, new Map(); are object
 const myObj: object = new Map<any, string>();
 
 /* -------------------- */

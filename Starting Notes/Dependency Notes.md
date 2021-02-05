@@ -82,3 +82,5 @@ Concurrently can run two or more processes, neat
 
         - scripted? Check out `package.json`, create `dev` script!
         - to use: `npm run dev`
+
+        - if you face an error that says, can't find file, check `package.json` and CHANGE the "main" key to the folder you want to check!
