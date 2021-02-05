@@ -79,3 +79,6 @@ Concurrently can run two or more processes, neat
         - `-k` to kill if one of the processes fail!
         - no spaces between arguments for names | colors
         - to use: `npx concurrently -k -n TSC,NODEMON -c yellow,green "tsc -w" "nodemon -w dist -q dist/index.js"`
+
+        - scripted? Check out `package.json`, create `dev` script!
+        - to use: `npm run dev`
