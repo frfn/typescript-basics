@@ -6,7 +6,7 @@ TS shall only be used in `Dev` mode, JS is used in Prod builds
 
 Learned more about package.json and scripts
 
-Concurreny can run two or more processes, neat
+Concurrently can run two or more processes, neat
 
 ## Starting
 
@@ -40,7 +40,7 @@ Concurreny can run two or more processes, neat
 
     - `"build": "tsc"`
 
-8. Instead of `npm run build` --> `node dist/index.js` **workflow**, you can use watch mode. It will watch if any change occurs in your typescript files ( if included in the "include": [] list! )
+8. Instead of `npm run build` --> `node dist/index.js` **workflow**, you can use watch mode. It will watch if any change occurs in your typescript files ( if included in the "include": [] list! | this will only affect the JS file though. )
 
     - watch mode!
     - to use: `npx tsc -w`
@@ -77,5 +77,5 @@ Concurreny can run two or more processes, neat
         - `-n` to set the name
         - `-c` to set the color
         - `-k` to kill if one of the processes fail!
-        - no spaces between arguments
+        - no spaces between arguments for names | colors
         - to use: `npx concurrently -k -n TSC,NODEMON -c yellow,green "tsc -w" "nodemon -w dist -q dist/index.js"`
