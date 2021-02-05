@@ -4,7 +4,7 @@
 	"description": "typescript basics",
 	"main": "index.js",
 	"scripts": {
-		"dev": "concurrently -k -n TSC,NODEMON -c yellow,green \"tsc -w\" \"nodemon -w dist -q dist/index.js\"",
+		"dev": "concurrently -k -n TSC,NODEMON -c yellow,green \"tsc -w\" \"nodemon -w dist -q dist/3. interfaces/interface.js\"",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
