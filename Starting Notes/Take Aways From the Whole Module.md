@@ -53,9 +53,9 @@ generic functions | generic arrow functions | interfaces | classes | `class Arra
 
 -   `(a: T): T` - this is a function
 
--   No static members in generics
+-   No **`static`** members in **`generics`**
 
 -   `this` keyword must be explictly typed
 
--   `<T extends Interface>` to showcase that the item that is accepted will be of type interface, that will be limited to what interface has
-    -   in `IShoppingCart` T **extends** Expirable!
+-   `<T extends Expirable>` to showcase that the item that **_is_** accepted will be of type **`Expirable`**, that will be limited to what interface has
+    -   in `IShoppingCart` T **extends** Expirable! will only accept objects that are of type Expirable
