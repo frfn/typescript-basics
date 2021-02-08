@@ -12,7 +12,8 @@ class Cat {
     }
 }
 class Dog {
-    constructor(name, group) {
+    // no need for group
+    constructor(name) {
         this.name = name;
     }
     setGroup(group) {
@@ -32,7 +33,7 @@ function initializeAnimal(Animal, name) {
     const animal = new Animal(name);
     return animal;
 }
-const cat = initializeAnimal(Cat, "Garfield");
+const cat = initializeAnimal(Cat, "Garfield"); // will create a Cat object
 cat.meow();
 cat.setGroup("feline");
 console.log(cat);

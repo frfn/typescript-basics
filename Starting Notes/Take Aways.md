@@ -46,3 +46,16 @@
 ---
 
 8. Generics!
+
+generic functions | generic arrow functions | interfaces | classes | `class ArrayList<X> { ... } `
+
+-   `const list = new ArrayList<number>();`
+
+-   `(a: T): T` - this is a function
+
+-   No static members in generics
+
+-   `this` keyword must be explictly typed
+
+-   `<T extends Interface>` to showcase that the item that is accepted will be of type interface, that will be limited to what interface has
+    -   in `IShoppingCart` T **extends** Expirable!

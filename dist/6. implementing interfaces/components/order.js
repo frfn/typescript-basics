@@ -17,6 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Order = void 0;
 class Order {
     constructor(price) {
+        // # just means a private variable
         _price.set(this, void 0);
         __classPrivateFieldSet(this, _price, price);
     }

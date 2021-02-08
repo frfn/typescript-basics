@@ -47,7 +47,7 @@ _hasWeapon = new WeakMap();
 /* testing to see what the Robot class name is without instantiating an object */
 // console.log(Robot.name);
 /*----- Instantiating new Object -----*/
-const ironGiant = new Robot("Iron Giant");
+const ironGiant = new Robot("Iron Giant", false);
 // ironGiant.askName();
 // ironGiant.move(100);
 /* ---------------------------- */
@@ -55,7 +55,7 @@ const ironGiant = new Robot("Iron Giant");
 /* ---------------------------- */
 class FlyingRobot extends Robot {
     constructor(name, jetPackName) {
-        super(name);
+        super(name, false);
         this.jetPackName = jetPackName;
     }
     fly(height) {
@@ -78,7 +78,7 @@ const ironGiantWithJetPack = new FlyingRobot("Iron Giant w/ Jet Pack", "Tesla Ro
 class StrictRobot extends Robot {
     constructor(n, ...r) {
         // this takes in name, it is protected
-        super(n);
+        super(n, true);
         this.rules = r;
     }
     static isPartAvailable(arr, part) {
