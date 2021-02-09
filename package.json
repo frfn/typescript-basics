@@ -2,9 +2,9 @@
 	"name": "udemytypescript",
 	"version": "1.0.0",
 	"description": "typescript basics",
-	"main": "dist/10. intersection/intersection.js",
+	"main": "dist/11. alias/alias.js",
 	"scripts": {
-		"dev": "concurrently -k -n ts,nodemon -c magenta,cyan \"tsc -w\" \"nodemon -w dist -q dist/9. intersection/intersection.js\"",
+		"dev": "concurrently -k -n ts,nodemon -c magenta,cyan \"tsc -w\" \"nodemon -w dist -q dist/11. alias/alias.js\"",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

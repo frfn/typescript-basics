@@ -97,7 +97,7 @@ interface Item {
 	price: number;
 }
 
-// creating an object, this is definitely just a TS thing,
+// creating an object, this is definitely just a TS thing, using this WILL NOT work in JS
 const cart: IShoppingCart<number, Item> = {
 	items: [],
 	addItem(item: Item) {

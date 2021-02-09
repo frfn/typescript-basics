@@ -6,15 +6,15 @@
 
 ---
 
-`modules` | import, export | alias, defaults
+1. `modules` | import, export | alias, defaults
 
 ---
 
-`types` of typescript | enums for constants
+2.  `types` of typescript | enums for constants
 
 ---
 
-`interfaces` | a structural contract, must be coded or it it will give error
+3.  `interfaces` | a structural contract, must be coded or it it will give error
 
 -   index signature is a dynamic structure
 -   call signature is for functions
@@ -23,15 +23,15 @@
 
 ---
 
-`functions` | overloading | typesafing arguments | declaring how functions should look like
+4.  `functions` | overloading | typesafing arguments | declaring how functions should look like
 
 ---
 
-`class` | `constructor` | `static` members vs `instance` members | class modifiers ( `public` , `protected` , `private` ) | `set` & `get` | extends | `#`private field
+5.  `class` | `constructor` | `static` members vs `instance` members | class modifiers ( `public` , `protected` , `private` ) | `set` & `get` | extends | `#`private field
 
 ---
 
-`implementing` interfaces + `writing` a function
+6.  `implementing` interfaces + `writing` a function
 
 -   **abstract** way of thinking, very neat.
 
@@ -41,7 +41,7 @@
 
 ---
 
-7 . Construct Signature, what a learning curve this was, SMFH!
+7.  Construct Signature, what a learning curve this was, SMFH!
 
 -   interfaces can be just objects as well | they do not have to be JUST classes
 
@@ -72,15 +72,27 @@ generic functions | generic arrow functions | interfaces | classes | `class Arra
 
 ---
 
-Type Guard: `const fn = (someArg: T | undefined): someArg is T => { ... }` | union syntax **`|`** | you can create objs from interface without needing a class declaration
+9. Type Guard: `const fn = (someArg: T | undefined): someArg is T => { ... }` | union syntax **`|`** | you can create objs from interface without needing a class declaration
 
 `instanceof` is only used for `classes` NOT `interfaces`
 
-Type Guard for Class: instanceof
-Type Guard for Interface: [someObj `is` Interface] { return ... !== **`undefined`**}
+-   Type Guard for Class: **`instanceof`**
+-   Type Guard for Interface: **`[someObj `is` Interface]`** { return ... !== **`undefined`**}
 
 ---
 
-intersection combines types | updateObject function is turned into a TS function filled with type safe practice and intersection!
+10. `intersection` combines types | updateObject function is turned into a TS function filled with type safe practice and intersection!
 
 ---
+
+11. create alias for an existing type, do not use it as an interface | don't even use it for structuring anything
+
+-   you can create a generic alias... but just stick to interface
+
+`alias` VS `interface` -- **shouldnt** even be a question.
+
+just use an `alias` that will either `UNION` some types or `INTERSECT` some types
+
+---
+
+12.

@@ -50,7 +50,7 @@ const newState: IState = {
 const updateObject = <IState extends object>(
 	oldState: IState,
 	newState: IState
-): IState & IState => {
+): IState /* & IState */ => {
 	return {
 		...oldState,
 		...newState,
@@ -58,3 +58,18 @@ const updateObject = <IState extends object>(
 };
 
 console.log(updateObject(oldState, newState));
+
+/* ------ */
+/*  Quiz  */
+/* ------ */
+interface X {
+	x: number;
+}
+
+interface Y {
+	y: number;
+}
+
+let XY: X & Y; // declaring a variable... that's it. | ex. let XY;
+
+XY = { x: 1, y: 2 };
