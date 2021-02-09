@@ -33,11 +33,3 @@ if (<DogUnion>pet) {
 -   this is special to TS
     [See More Here!](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
 -   contains `(<DogUnion>someObj).bark` to check if object has a certain method, in this case `.bark`
-
-LAST THING I WENT THROUGH
-
-TYPE GUARDing -- `is` key word [someObj `is` Interface]
-
-and
-
-Union ( using `|` ) to limit what can be passed in as arguments!

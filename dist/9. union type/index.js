@@ -7,8 +7,8 @@ const catUnion = {
         console.log("walking");
     },
 };
-catUnion.meow();
-catUnion.walk();
+// catUnion.meow();
+// catUnion.walk();
 const dogUnion = {
     bark() {
         console.log("bark");
@@ -31,4 +31,37 @@ function callMyPet(pet) {
         pet.meow();
     }
 }
-callMyPet(dogUnion);
+// callMyPet(dogUnion);
+/* ------------------------------------- */
+/*     instanceof | used for classes     */
+/* ------------------------------------- */
+class Foo {
+    constructor(foo, prop) {
+        this.foo = foo;
+        this.prop = prop;
+    }
+    print() {
+        console.log(this.foo);
+    }
+}
+class Bar {
+    constructor(bar, prop) {
+        this.bar = bar;
+        this.prop = prop;
+    }
+    print() {
+        console.log(this.bar);
+    }
+}
+function fooBarFunction(obj) {
+    if (obj instanceof Foo) {
+        obj.print();
+    }
+    else {
+        obj.print();
+    }
+}
+const foo = new Foo(1, "foo");
+const bar = new Bar(2, "bar");
+fooBarFunction(foo);
+fooBarFunction(bar);

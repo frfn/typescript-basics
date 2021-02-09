@@ -73,3 +73,14 @@ generic functions | generic arrow functions | interfaces | classes | `class Arra
 ---
 
 Type Guard: `const fn = (someArg: T | undefined): someArg is T => { ... }` | union syntax **`|`** | you can create objs from interface without needing a class declaration
+
+`instanceof` is only used for `classes` NOT `interfaces`
+
+Type Guard for Class: instanceof
+Type Guard for Interface: [someObj `is` Interface] { return ... !== **`undefined`**}
+
+---
+
+intersection combines types | updateObject function is turned into a TS function filled with type safe practice and intersection!
+
+---
