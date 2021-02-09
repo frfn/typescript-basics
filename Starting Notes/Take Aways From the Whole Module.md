@@ -41,7 +41,17 @@
 
 ---
 
-7. Confused about AnimalConstructor plus the errors that are occuring
+7 . Construct Signature, what a learning curve this was, SMFH!
+
+-   interfaces can be just objects as well | they do not have to be JUST classes
+
+-   tested in 9. union type | creating a DogUnion and CatUnion objects from interface!
+
+-   the explanation is here for the `constuct signature`!
+
+[AnimalConstructor<T> {...}](https://stackoverflow.com/questions/13407036/how-does-interfaces-with-construct-signatures-work)
+
+makes so much more sense!
 
 ---
 
@@ -59,3 +69,7 @@ generic functions | generic arrow functions | interfaces | classes | `class Arra
 
 -   `<T extends Expirable>` to showcase that the item that **_is_** accepted will be of type **`Expirable`**, that will be limited to what interface has
     -   in `IShoppingCart` T **extends** Expirable! will only accept objects that are of type Expirable
+
+---
+
+Type Guard: `const fn = (someArg: T | undefined): someArg is T => { ... }` | union syntax **`|`** | you can create objs from interface without needing a class declaration

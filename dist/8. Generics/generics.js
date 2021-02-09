@@ -40,7 +40,7 @@ const chocoCake = {
     expiryDate: new Date(),
 };
 // array of cakes
-const chocoCakes = [{ expiryDate: new Date() }];
+const chocoCakes = [];
 const vanillaCakes = [{ expiryDate: new Date() }];
 /* ALL items in the array MUST be type of Expirable */
 // we extend because we want an object IF it is of type Expirable since expiryDate will be used
@@ -48,10 +48,9 @@ const getExpiredItems = (items) => {
     const currentDate = new Date().getTime();
     return items.filter((item) => item.expiryDate.getDate() < currentDate);
 };
-// no need to put <GenericType> since it already is infered in lines 52 & 53
 const exiredChocoCakes = getExpiredItems(chocoCakes);
 const exiredVanillaCakes = getExpiredItems(vanillaCakes);
-// creating an object
+// creating an object, this is definitely just a TS thing,
 const cart = {
     items: [],
     addItem(item) {

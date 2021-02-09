@@ -60,7 +60,7 @@ const chocoCake: ChocolateCake = {
 };
 
 // array of cakes
-const chocoCakes: ChocolateCake[] = [{ expiryDate: new Date() }];
+const chocoCakes: ChocolateCake[] = [];
 const vanillaCakes: VanillaCake[] = [{ expiryDate: new Date() }];
 
 // interface for getExpiredItems function
@@ -77,7 +77,6 @@ const getExpiredItems: getExpiredItemsFunction = <T extends Expirable>(
 	return items.filter((item) => item.expiryDate.getDate() < currentDate);
 };
 
-// no need to put <GenericType> since it already is infered in lines 52 & 53
 const exiredChocoCakes = getExpiredItems<ChocolateCake>(chocoCakes);
 const exiredVanillaCakes = getExpiredItems<VanillaCake>(vanillaCakes);
 

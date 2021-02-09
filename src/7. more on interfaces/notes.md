@@ -4,8 +4,6 @@
 
 -   AnimalConstructor is an interface
 
-# Confusing when I dealt with the AnimalConstructor interface, I still kind of am. Could not follow what he was talking about.
-
 To understand
 
 1. `initializeAnimal` will take 2 arguments, Animal and Name
@@ -13,8 +11,10 @@ To understand
     - `Animal` is a class
     - `name` is a string
 
-2. `new ClassName`in AnimalConstructor will instantiate an object with that class + will return an object of type Animal
+2. `new (nameOfObj: string): T`in AnimalConstructor will instantiate an object with that class + will return an object of type Animal
 
-    - Animal variable is going to be the class Name
+    - `Animal` is the constructor, as we see name of the object will be whatever the first argument will be for initializeAnimal
 
-3. This is still confusing, I think I have to see it in action, examples like this just does not connect ..
+3. const animal = [new Animal(name)] <-- governed by AnimalConstructor
+
+I got woo hoo!!

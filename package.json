@@ -2,9 +2,9 @@
 	"name": "udemytypescript",
 	"version": "1.0.0",
 	"description": "typescript basics",
-	"main": "dist/8. generics/generics.js",
+	"main": "dist/9. union type/index.js",
 	"scripts": {
-		"dev": "concurrently -k -n TSC,NODEMON -c yellow,green \"tsc -w\" \"nodemon -w dist -q dist/8. generics/generics.js\"",
+		"dev": "concurrently -k -n ts,nodemon -c magenta,cyan \"tsc -w\" \"nodemon -w dist -q dist/9. union type/index.js\"",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

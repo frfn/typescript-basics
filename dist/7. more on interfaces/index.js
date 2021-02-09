@@ -1,8 +1,7 @@
 "use strict";
 class Cat {
-    constructor(name, group) {
+    constructor(name) {
         this.name = name;
-        this.group = group;
     }
     setGroup(group) {
         this.group = group;
@@ -12,7 +11,6 @@ class Cat {
     }
 }
 class Dog {
-    // no need for group
     constructor(name) {
         this.name = name;
     }
@@ -23,20 +21,18 @@ class Dog {
         console.log("Bark!");
     }
 }
-// a function that can instantiate different objects ( cat | dog | etc. )
-// Animal is just a variable name | of type AnimalConstructor
-// name is a just a string variable
-// when we create an animal, we also want to pass in the name!
-// extends Animal? So the generic will still be of type Animal
-function initializeAnimal(Animal, name) {
-    // ex. cat | dog must take in name, they are Animal
-    const animal = new Animal(name);
+function initializeAnimal(Constructor, // Constructor will be in the form of AnimalConstructor | new NameOfObj
+name) {
+    const animal = new Constructor(name); // since Dog | Cat takes in an argumet, so must Constructor
+    animal.setGroup("mammal");
     return animal;
 }
-const cat = initializeAnimal(Cat, "Garfield"); // will create a Cat object
+// cat obj
+const cat = initializeAnimal(Cat, "Garfield");
 cat.meow();
 cat.setGroup("feline");
 console.log(cat);
+// dog obj
 const dog = initializeAnimal(Dog, "Scooby");
 dog.bark();
 dog.setGroup("canine");
