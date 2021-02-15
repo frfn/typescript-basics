@@ -22,6 +22,15 @@ const newState = {
 const updateObject = (oldState, newState) => {
     return Object.assign(Object.assign({}, oldState), newState);
 };
+// const updateObject = <T extends IState>(
+// 	oldState: T,
+// 	newState: T
+// ): IState /* & IState */ => {
+// 	return {
+// 		...oldState,
+// 		...newState,
+// 	};
+// };
 console.log(updateObject(oldState, newState));
 let XY; // declaring a variable... that's it. | ex. let XY;
 XY = { x: 1, y: 2 };

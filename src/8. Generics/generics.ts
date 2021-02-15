@@ -5,6 +5,8 @@ function genericFunction<T>(arg: T): T {
 	return arg;
 }
 
+const num = genericFunction<number>(12);
+
 /* ---------------- */
 /* arrow generic fn */
 /* ---------------- */
@@ -13,10 +15,14 @@ const genericArrowFunction = <T>(arg: T): T => arg;
 /* ------------------ */
 /* generic interfaces */
 /* ------------------ */
+// i dont know where to use this
 interface IGenericInterface<T> {
 	(a: T): T; // this a function, takes T, outputs T
 	someProp: T;
 }
+
+const bucket: IGenericInterface<number> = (a: number) => a * 10;
+bucket.someProp = 100;
 
 /* ------------- */
 /* generic class */

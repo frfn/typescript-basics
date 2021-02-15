@@ -34,7 +34,7 @@ console.log(combineInterfaceResults(resultObj));
 /* ------------------------------------------ */
 interface IState {
 	loading: boolean;
-	error: undefined | null;
+	error: undefined | null | object;
 }
 
 const oldState: IState = {
@@ -56,6 +56,16 @@ const updateObject = <IState extends object>(
 		...newState,
 	};
 };
+
+// const updateObject = <T extends IState>(
+// 	oldState: T,
+// 	newState: T
+// ): IState /* & IState */ => {
+// 	return {
+// 		...oldState,
+// 		...newState,
+// 	};
+// };
 
 console.log(updateObject(oldState, newState));
 

@@ -7,10 +7,13 @@ exports.ArrayList = void 0;
 function genericFunction(arg) {
     return arg;
 }
+const num = genericFunction(12);
 /* ---------------- */
 /* arrow generic fn */
 /* ---------------- */
 const genericArrowFunction = (arg) => arg;
+const bucket = (a) => a * 10;
+bucket.someProp = 100;
 /* ------------- */
 /* generic class */
 /* ------------- */

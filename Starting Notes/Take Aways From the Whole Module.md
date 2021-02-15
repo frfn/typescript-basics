@@ -4,6 +4,11 @@
 
 `tsc`, `nodemon`, `concurrently`
 
+**`7. Setting Up a Simple TypeScript Project`** goes into detail for `package.json`
+
+-   `"main": "js file loc"`
+-   `"script": { "dev": ... }`
+
 ---
 
 1. `modules` | import, export | alias, defaults
@@ -95,4 +100,8 @@ just use an `alias` that will either `UNION` some types or `INTERSECT` some type
 
 ---
 
-12.
+12. packages | Brief intro of seeing if package contains Types! | `Apollo` has types, `React` does not | `npm i -D @types/npm-packagename` | `.d.ts` for declare module 'npm-package-name' {...}
+
+---
+
+13. Declaration Merging |
