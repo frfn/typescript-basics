@@ -112,4 +112,8 @@ just use an `alias` that will either `UNION` some types or `INTERSECT` some type
 
 ---
 
-15. Mapped Types | Allows to create a new type by iterating over a list of properties
+15. Mapped Types | Allows to create a new type by iterating over a list of properties | Utility Types are created from Mapped Types, if we want a new utility, we can create it | `keyof` grabs the keys of T, T is an object |
+
+---
+
+16. Condition Types |

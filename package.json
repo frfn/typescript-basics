@@ -2,9 +2,9 @@
 	"name": "udemytypescript",
 	"version": "1.0.0",
 	"description": "typescript basics",
-	"main": "dist/15. mapped types/index.js",
+	"main": "dist/16. conditional types/index.js",
 	"scripts": {
-		"dev": "concurrently -k -n ts,nodemon -c magenta,cyan \"tsc -w\" \"nodemon -w dist -q dist/15. mapped types/index.js\"",
+		"dev": "concurrently -k -n ts,nodemon -c magenta,cyan \"tsc -w\" \"nodemon -w dist -q dist/16. conditional types/index.js\"",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
