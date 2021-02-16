@@ -93,6 +93,7 @@ interface IShoppingCart<ItemId, Item> {
 	items: Array<Item>;
 	addItem(this: IShoppingCart<ItemId, Item>, item: Item): void;
 	getItemById(
+		// identifies what `this.` shall be so `this.` is not of type any
 		this: IShoppingCart<ItemId, Item>,
 		id: ItemId
 	): Item | undefined;
@@ -110,6 +111,7 @@ const cart: IShoppingCart<number, Item> = {
 		this.items.push(item);
 	},
 	getItemById(id: number): Item | undefined {
+		// this. is used there, it is of type IShoppingCart
 		return this.items.find((item) => item.id === id);
 	},
 };
