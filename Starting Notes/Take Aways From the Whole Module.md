@@ -104,4 +104,12 @@ just use an `alias` that will either `UNION` some types or `INTERSECT` some type
 
 ---
 
-13. Declaration Merging |
+13. Declaration Merging | namespace **`EXTENDS`** and adds on properties that are located in **modules** or **third party packages** if you must add | if using namespace, do not forget to **`export`**!
+
+---
+
+14. Utility Types | global functions that will alter, modify, augment, transform -- interfaces, classes, functions! Ex. `Partial<Type>`, will make all the properties in interfaces _optional_
+
+---
+
+15. Mapped Types | Allows to create a new type by iterating over a list of properties
